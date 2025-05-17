@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="link/bootstrap.min.css">
+    <title>Document</title>
+    <style>
+        .collapse .nav-link:hover,
+        .collapse .nav-link:focus {
+            background-color: blue;
+            color: white !important;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 992px) {
+            #pic {
+                width: 480px;
+                height: auto;
+                top: 20%;
+                left: -10%;
+            }
+        }
+        @media (max-width: 768px) {
+            #pic {
+                width: 270px;
+                height: auto;
+                top: 15%;
+                left: -20%;
+                
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <div class="container-fluid" style="padding: 10px;">
+            <a class="navbar-brand" href="#"><img width="80" height="70" class="position-absolute top-0 "
+                    src="https://img.freepik.com/premium-vector/programmer-mascot-logo-design_7737-2817.jpg?semt=ais_hybrid&w=740"
+                    alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                <ul class="navbar-nav gap-3 mb-2 mb-lg-0 fs-6 text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar -->
+    <!-- home -->
+    <section class="home position-relative container-fluid p-0">
+        <!-- Overlay -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(0, 0, 0, 0.5); z-index: 1;">
+            <img src="photo_2025-05-17_15-04-29.jpg" width="500" height="600" class="position-absolute object-position-center object-fit-cover"
+                id="pic"
+                style="margin-left: 50%; margin-top: 10%; clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);"
+                alt="">
+        </div>
+
+        <!-- Text -->
+        <div class="position-absolute top-50  translate-middle text-light fw-bolder "
+            style="z-index: 2; margin-left: 30%; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+            <div class="fs-1 mb-2">Hello,</div>
+            <div class="fs-1 mb-2">I'm <span class="text-danger">Narong</span></div>
+            <div class="fs-1 mb-2">Web Developer</div>
+            <button class="btn btn-danger mb-2 p-3 ">Contact Me</button>
+
+        </div>
+
+
+
+        <!-- Background image -->
+        <img class="w-100 object-fit-cover" style="height: 100vh;"
+            src="https://images.squarespace-cdn.com/content/v1/56a063f9b20943ce9188cabe/1531163695297-Z60VHLGGCIMEWO6XHJJ7/FueledCreative-footer-bg.jpg?format=2500w"
+            alt="">
+
+    </section>
+
+
+
+</body>
+<script src="link/bootstrap.bundle.min.js"></script>
+
+</html>
